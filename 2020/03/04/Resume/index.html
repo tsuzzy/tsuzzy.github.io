@@ -12,7 +12,7 @@
 
 
 
-<title>Resume | Hexo</title>
+<title>CV | Hexo</title>
 
 
 
@@ -108,11 +108,73 @@
             <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">Resume</h1>
+            <h1 class="post-title">CV</h1>
             
                 <div class="post-meta">
                     
@@ -128,7 +190,103 @@
         </header>
 
         <div class="post-content">
-            
+            <p>Address: No.999 Hucheneg Ring Road, Pudong New Area, Shanghai, China, 201306<br>Email: <a href="mailto:1653204@st.shou.edu.cn">1653204@st.shou.edu.cn</a>(by 06/2020); <a href="mailto:tsuzsrx@gmail.com">tsuzsrx@gmail.com</a><br>Tel: (+86) 180 1627 4237</p>
+<h3 id="EDUCATION-AND-TRAINING"><a href="#EDUCATION-AND-TRAINING" class="headerlink" title="EDUCATION AND TRAINING"></a>EDUCATION AND TRAINING</h3><hr>
+<p><font color=#20B2AA><strong><em>Degree</em></strong></font>  </p>
+<p><strong>College of Information Technology Shanghai Ocean University</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shanghai, China<br>B.S. in Spatial Information and Digital Technology &nbsp;&nbsp;&nbsp;&nbsp;<em>June 2020</em></p>
+<ul>
+<li>Cumulative GPA: 3.45/4.00</li>
+<li>WES verified GPA: 3.52/4.00</li>
+<li>Main Course:<br>Mathematics Analysis, Advanced Algebra, Data Structure and Algorithms,<br>Graphic Processing, Computer Graphics, Spatial Modeling and Data Analysis</li>
+</ul>
+<p><font color= #20B2AA><strong><em>International Study</em></strong></font></p>
+<p><strong>Summer Program&nbsp;&nbsp;&nbsp;&nbsp;University of California, Berkeley</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Francisco, CA, USA<br>Leadership and Project Management Program&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>July 2018</em><br></p>
+<h3 id="TEACHING-EXPERIENCE"><a href="#TEACHING-EXPERIENCE" class="headerlink" title="TEACHING EXPERIENCE"></a>TEACHING EXPERIENCE</h3><hr>
+<ul>
+<li>Teaching Assistant, Shanghai Ocean University, Advanced Mathematics&nbsp;&nbsp;&nbsp;&nbsp;<em>Spring 2017</em><br>Responsible for grading assignments and projects and helping other students with questions during office hour<br></li>
+</ul>
+<h3 id="RESEARCH-PROJECTS-EXPERIENCE"><a href="#RESEARCH-PROJECTS-EXPERIENCE" class="headerlink" title="RESEARCH/PROJECTS EXPERIENCE"></a>RESEARCH/PROJECTS EXPERIENCE</h3><hr>
+<p><font color= #20B2AA><strong><em>Research</em></strong></font></p>
+<ul>
+<li>Implementation and application of a fully homomorphic encryption library based on Python <em>(January 2020 - present)</em><ul>
+<li>Implement different homomorphic encryption (HE) schemes and improve the algorithms efficiency to the HE schemes, applying in encrypted images processing.</li>
+</ul>
+</li>
+</ul>
+<p><font color= #20B2AA><strong><em>Funded Projects</em></strong></font></p>
+<ul>
+<li><p>“Enjoy Reading” – To be a walking reader – a lightweight APP as a platform for sharing ideas and thoughts from reading <em>(April 2018 – November 2018)</em></p>
+<ul>
+<li>Geographic data collection and graphic processing</li>
+<li>Spatial database building</li>
+<li>Front-end development</li>
+</ul>
+</li>
+<li><p>Design and implementation of campus service on the WeChat platform for freshmen <em>(May 2017 – November 2017)</em></p>
+<ul>
+<li>Completed web-page development based on HTML/CSS/JavaScript and implemented Vue.js front-end frame to make the clear and maintainable structure </li>
+</ul>
+</li>
+</ul>
+<h3 id="HONORS-AWARDS"><a href="#HONORS-AWARDS" class="headerlink" title="HONORS/AWARDS"></a>HONORS/AWARDS</h3><hr>
+<p><font color= #20B2AA><strong><em>Fellowship and Funds</em></strong></font></p>
+<ul>
+<li>People’s Scholarship of Shanghai Ocean University (5 times) <em>(2017-2019)</em></li>
+<li>Funds of College Student Innovation Activity – Shanghai Municipal Level <em>(November 2019)</em></li>
+<li>Funds of College Student Innovation Activity – University Level <em>(November 2018)</em></li>
+</ul>
+<p><font color= #20B2AA><strong><em>Competition and Contest</em></strong></font></p>
+<ul>
+<li>Third Place of the 3rd “Think Youth” Shanghai Digital Creation, Innovation, and Entrepreneurship Contest <em>Shanghai Municipal Education Commission</em> <em>(May 2018)</em></li>
+<li>Excellent Work Award in the 1st Youth Photography Website – Youth Photography Competition <em>Youth Photography Website</em>  <em>(December 2017)</em></li>
+<li>Third Place of “Zhixing Cup” Shanghai College Students Social Practice Project Competition <em>Shanghai Municipal Education Commission, Shanghai Students’ Federation</em>  <em>(November 2017</em>)</li>
+<li>Third Place of 2017 Shanghai College Students Internet Business Innovation Application Competition <em>Shanghai Municipal Education Commission</em> <em>(October 2017)</em></li>
+<li>Third Place in the 3rd “internet+” College Students Innovation and Entrepreneurship Competition <em>Shanghai Ocean University</em>  <em>(June 2017)</em></li>
+<li>“The Most Popular Project” in the 3rd Dishuihu College Students Innovation and Entrepreneurship Forum  <em>(June 2017)</em><br></li>
+</ul>
+<h3 id="CERTIFICATES"><a href="#CERTIFICATES" class="headerlink" title="CERTIFICATES"></a>CERTIFICATES</h3><hr>
+<ul>
+<li><p>Qualification of Computer and Software Professional <em>(November 2018)</em></p>
+<ul>
+<li>Specialty: Programmer</li>
+<li>Level: Primary</li>
+</ul>
+<p><em>Ministry of Industry and Information Technology of PRC</em></p>
+</li>
+<li><p>National Computer Rank Examination Certificate <em>(June 2017)</em></p>
+<ul>
+<li>Grade II for C Language Programming</li>
+</ul>
+<p><em>National Education Examination Authorit</em></p>
+</li>
+</ul>
+<h3 id="RELEVANT-SKILLS"><a href="#RELEVANT-SKILLS" class="headerlink" title="RELEVANT SKILLS"></a>RELEVANT SKILLS</h3><hr>
+<p><font color= #20B2AA><strong><em>IT Skills</em></strong></font></p>
+<ul>
+<li>C, C++, Java, C#, JavaScript, Python</li>
+<li>MATLAB/Octave, NumPy, MySQL, Tensorflow</li>
+<li>NCRE-II Passed</li>
+</ul>
+<p><font color= #20B2AA><strong><em>English Skills</em></strong></font></p>
+<ul>
+<li>Fluent in both spoken and written English</li>
+<li>CET-6 Passed, IELTS 6.0</li>
+</ul>
+<h3 id="EXTRACURRICULAR-ACTIVITIES"><a href="#EXTRACURRICULAR-ACTIVITIES" class="headerlink" title="EXTRACURRICULAR ACTIVITIES"></a>EXTRACURRICULAR ACTIVITIES</h3><hr>
+<ul>
+<li>Volunteer of 2017 Shanghai International Marathon <em>November 2017</em></li>
+<li>Member of English Club of Shanghai Ocean University <em>September 2017 – June 2018</em></li>
+<li>Head of the Department of Media Center, Youth League Committee of College of Information Technology Shanghai Ocean University <em>September 2017 – June 2018</em><ul>
+<li>Editor of Social Media</li>
+</ul>
+</li>
+<li>Member of the Department of Information, Youth League Committee of College of Information Technology Shanghai Ocean University <em>September 2016 – June 2017</em><ul>
+<li>Reporter</li>
+<li>part-time photographer</li>
+</ul>
+</li>
+</ul>
+
         </div>
 
         
